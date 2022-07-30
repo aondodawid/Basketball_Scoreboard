@@ -1,0 +1,134 @@
+@font-face {
+  font-family: Cursed Timer ULiL;
+  src: url(./CursedTimerULiL.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1B244A;
+}
+
+h3 {
+  font-family: Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 2.25rem;
+  color: #EEEEEE;
+  margin: 1rem auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  height: 100vmin;
+  align-items: center;
+}
+
+.container {
+  background-color: #1B244A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.content {
+  width: 50%;
+  max-width: 280px;
+}
+
+.content+.content {
+  margin-left: 4vw;
+}
+
+.scores {
+  background-color: #080001;
+  color: #F94F6D;
+  font-family: 'Cursed Timer ULiL';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5rem;
+  padding: 2vw 2vw;
+  text-align: center;
+}
+
+.scores__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0.5rem;
+  align-self: flex-start;
+  flex: 1;
+}
+
+.scores__btn+.scores__btn {
+  margin-left: 0.4rem;
+}
+
+.scores__btn {
+  border: 2px solid #9AABD8;
+  border-radius: 5px;
+  color: #9AABD8;
+  background-color: transparent;
+  font-family: 'Cursed Timer ULiL';
+  font-weight: 400;
+  font-size: 1.125rem;
+  /* line-height: 4.5vw; */
+  text-align: center;
+  flex: 1;
+  padding: 0.5vw 0;
+}
+
+.scores__btn:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.new-game {
+  padding: 0.4rem 2rem;
+  align-self: flex-start;
+  margin: 0.5rem auto 2rem;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #047857;
+  border: 2px solid #047857;
+}
+
+.new-game:hover {
+  color: #6EE7B7;
+  border-color: #6EE7B7;
+  cursor: pointer;
+}
+
+.green-border {
+  border: 2px solid #047857;
+}
+
+@media screen and (max-width:1200px) {
+  .scores {
+    font-size: 4rem;
+  }
+
+  .scores__btn {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:420px) {
+  h3 {
+    font-size: 5vw;
+  }
+
+  .scores {
+    font-size: 10vw;
+  }
+
+  .scores__btn {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <html>
+      <head>
+        <link rel="stylesheet" href="style.css" />
+      </head>
+      <body>
+        <section>
+          <div class="container">
+            <div class="content">
+              <h3>HOME</h3>
+              <div class="scores scores--home">00</div>
+              <div class="scores__buttons">
+                <button
+                  type="button"
+                  class="scores__btn"
+                  data-scores="1"
+                  data-team="home"
+                >
+                  +1
+                </button>
+                <button
+                  type="button"
+                  class="scores__btn"
+                  id="scores__btn"
+                  data-scores="2"
+                  data-team="home"
+                >
+                  +2
+                </button>
+                <button
+                  type="button"
+                  class="scores__btn"
+                  data-scores="3"
+                  data-team="home"
+                >
+                  +3
+                </button>
+              </div>
+            </div>
+            <div class="content">
+              <h3>GUEST</h3>
+              <div class="scores scores--guest">00</div>
+              <div class="scores__buttons">
+                <button
+                  type="button"
+                  class="scores__btn"
+                  data-scores="1"
+                  data-team="guest"
+                >
+                  +1
+                </button>
+                <button
+                  type="button"
+                  class="scores__btn"
+                  data-scores="2"
+                  data-team="guest"
+                >
+                  +2
+                </button>
+                <button
+                  type="button"
+                  class="scores__btn"
+                  data-scores="3"
+                  data-team="guest"
+                >
+                  +3
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="new-game">new Game</button>
+        </section>
+        <script src="index.js"></script>
+      </body>
+    </html>
+  </body>
+</html>
